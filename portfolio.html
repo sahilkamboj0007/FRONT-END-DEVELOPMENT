@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil kamboj</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; 
+        }
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(to right, #4f46e5, #a855f7); 
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-slate-900">
+                sk<span class="text-indigo-600"></span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-slate-600 hover:text-indigo-600 transition-colors duration-300">Home</a>
+                <a href="#projects" class="text-slate-600 hover:text-indigo-600 transition-colors duration-300">Projects</a>
+                <a href="#about" class="text-slate-600 hover:text-indigo-600 transition-colors duration-300">About</a>
+                <a href="#contact" class="text-slate-600 hover:text-indigo-600 transition-colors duration-300">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden md:block bg-indigo-600 text-white px-5 py-2 rounded-full hover:bg-indigo-700 transition-transform duration-300 hover:scale-105">
+                Hire Me
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-slate-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#home" class="block text-slate-600 hover:text-indigo-600 transition-colors duration-300">Home</a>
+            <a href="#projects" class="block text-slate-600 hover:text-indigo-600 transition-colors duration-300">Projects</a>
+            <a href="#about" class="block text-slate-600 hover:text-indigo-600 transition-colors duration-300">About</a>
+            <a href="#contact" class="block text-slate-600 hover:text-indigo-600 transition-colors duration-300">Contact</a>
+             <a href="#contact" class="block w-full text-center bg-indigo-600 text-white mt-2 px-5 py-2 rounded-full hover:bg-indigo-700 transition-transform duration-300 hover:scale-105">
+                Hire Me
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <!-- Section 1: Hero -->
+        <section id="home" class="min-h-screen flex items-center pt-24 md:pt-0">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight">
+                        Hi, Sahil
+                        <span class="block text-gradient mt-2">Creative Developer</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-slate-600 max-w-lg mx-auto md:mx-0">
+                        I build beautiful and responsive web applications. Turning complex problems into elegant, user-friendly solutions is my passion.
+                    </p>
+                    <div class="mt-8 flex justify-center md:justify-start gap-4">
+                        <a href="#projects" class="bg-indigo-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            View My Work
+                        </a>
+                        <a href="#" class="bg-white text-slate-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-slate-100 transition-all duration-300 transform hover:scale-105 shadow-lg border border-slate-200">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="relative w-full max-w-sm mx-auto">
+                     <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full blur-2xl opacity-50"></div>
+                     <img src="https://placehold.co/400x400/E2E8F0/4A5568?text=SK" 
+                          alt="sahil Doe Profile Picture" 
+                          class="relative w-full rounded-full border-8 border-white shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Projects -->
+        <section id="projects" class="py-24">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900">My Projects</h2>
+                <p class="mt-4 text-lg text-slate-600">Here are a few projects I've worked on recently.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/6366f1/ffffff?text=Project+One" alt="Project One Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Real-Time Chat App</h3>
+                        <p class="text-slate-600 mb-4">A full-stack chat application built with React and Firebase, featuring real-time messaging and authentication.</p>
+                        <a href="#" class="text-indigo-600 font-semibold hover:underline">View Project &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Project+Two" alt="Project Two Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">E-commerce Platform</h3>
+                        <p class="text-slate-600 mb-4">A responsive e-commerce site with a custom shopping cart, product pages, and a secure checkout process.</p>
+                        <a href="#" class="text-indigo-600 font-semibold hover:underline">View Project &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/ec4899/ffffff?text=Project+Three" alt="Project Three Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Portfolio Website</h3>
+                        <p class="text-slate-600 mb-4">A personal portfolio website (like this one!) designed to showcase skills and projects to potential employers.</p>
+                        <a href="#" class="text-indigo-600 font-semibold hover:underline">View Project &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 3: About Me -->
+        <section id="about" class="py-24 bg-white rounded-3xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="px-8">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900">About Me</h2>
+                    <p class="mt-6 text-lg text-slate-600">
+                        I'm a passionate developer with a knack for creating dynamic and intuitive web experiences. With a strong foundation in front-end and back-end technologies, I enjoy bringing ideas to life in the browser.
+                    </p>
+                    <p class="mt-4 text-lg text-slate-600">
+                        When I'm not coding, you can find me exploring the latest tech trends, contributing to open-source projects, or enjoying a good cup of coffee.
+                    </p>
+                </div>
+                 <div class="w-full">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-4 px-8">My Skills</h3>
+                    <div class="flex flex-wrap gap-3 px-8">
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">HTML</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">CSS</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">JavaScript</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">React.js</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">Node.js</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">Tailwind CSS</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">Firebase</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">Git & GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Contact -->
+        <section id="contact" class="py-24">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900">Get In Touch</h2>
+                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
+                    I'm currently available for freelance work and open to discussing new projects. Feel free to reach out!
+                </p>
+                <div class="mt-8">
+                    <a href="mailto:hello@johndoe.com" class="inline-block bg-indigo-600 text-white text-xl font-semibold px-10 py-4 rounded-full hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        hellosahil.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Sahil kamboj. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        mobileMenu.addEventListener('click', (event) => {
+            if (event.target.tagName === 'A') {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
